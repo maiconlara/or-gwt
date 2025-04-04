@@ -1,0 +1,6 @@
+export * from "./principal-card"
+export * from "./our-history"
+export * from "./home-page"
+export * from "./messages"
+export * from "./presence"
+export * from "./gifts"
