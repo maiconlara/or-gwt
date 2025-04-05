@@ -1,6 +1,5 @@
 "use client";
 
-import { SuspenseFallback } from "@/components/ui/suspense-fallback";
 import { motion, AnimatePresence } from "motion/react";
 
 interface SuspenseAnimationProps {
@@ -30,7 +29,7 @@ export const SuspenseAnimation = ({ children, showChildren }: SuspenseAnimationP
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.1 }}
                 >
-                    <SuspenseFallback />
+                    {/* <SuspenseFallback /> */}
                 </motion.div>
             )}
         </AnimatePresence>

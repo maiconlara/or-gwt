@@ -1,40 +1,9 @@
-
 import type { Config } from "tailwindcss";
 
 const fontConfig = {
-    poppins: "var(--font-poppins)",
-    abel: "var(--font-abel)",
     montserrat: "var(--font-montserrat)",
-    roboto: "var(--font-roboto)",
-    lato: "var(--font-lato)",
-    inter: "var(--font-inter)",
-    nunito: "var(--font-nunito)",
-    raleway: "var(--font-raleway)",
-    merriweather: "var(--font-merriweather)",
-    lora: "var(--font-lora)",
-    spectral: "var(--font-spectral)",
-    oswald: "var(--font-oswald)",
-    anton: "var(--font-anton)",
-    bungee: "var(--font-bungee)",
-    pacifico: "var(--font-pacifico)",
-    caveat: "var(--font-caveat)",
-    satisfy: "var(--font-satisfy)",
-    lateef: "var(--font-lateef)",
-    charmonman: "var(--font-charmonman)",
-    gwendolyn: "var(--font-gwendolyn)",
-    playfair: "var(--font-playfair)",
-    arimo: "var(--font-arimo)",
-    bitter: "var(--font-bitter)",
-    cairo: "var(--font-cairo)",
-    dosis: "var(--font-dosis)",
-    inconsolata: "var(--font-inconsolata)",
-    karla: "var(--font-karla)",
-    lobster: "var(--font-lobster)",
-    oxygen: "var(--font-oxygen)",
-    quicksand: "var(--font-quicksand)",
-    rubik: "var(--font-rubik)",
-    teko: "var(--font-teko)",
-    ubuntu: "var(--font-ubuntu)",
+    "american": "var(--font-american)",
+    "ultinoid": "var(--font-ultinoid)",
 };
 
 const config = {
@@ -75,31 +44,29 @@ const config = {
                 background: "#F1F1F1",
                 placeholder: "#d9d9d9",
                 white: "#ffffff",
-                orange: "#FF6000",
                 green: "#5E9A52",
                 success: "#1AD598",
                 error: "#C45F65",
                 lines: "#00000026",
-                blue: "#1B3675",
-                darkteal: "#52849A",
-                darkgray: "#3E3E3E",
-                gray: {
-                    400: "#D6D6D6",
-                    500: "#969696",
+
+                purple: {
+                    light: "#B8A7C8",
+                    medium: "#8668A1",
+                    strong: "#37245B",
                 },
-                "yellow-green": "#ECF86E",
-                debutante: {
-                    background: "#fdecf0",
-                    hover: "#eeeeee",
-                    red: {
-                        300: "#FC4A4A",
-                        400: "#E41414",
-                        500: "#D03A3A",
-                    },
+                gray: {
+                    light: "#AAAAAA",
+                    medium: "#71717A",
+                    strong: "#18181a",
+                },
+                red: {
+                    light: "#DB2F1F",
+                    strong: "#BA1C1C",
                 },
             },
             backgroundImage: {
-                coverImage: "url('../assets/images/cover.png')",
+                coverImage: "url('../assets/images/purplebg.jpg')",
+                oliviaBackground: "url('../assets/images/olivias.png')",
             },
             keyframes: {
                 "caret-blink": {
@@ -114,11 +81,16 @@ const config = {
                     from: { height: "var(--radix-accordion-content-height)" },
                     to: { height: "0" },
                 },
+                smoothBounce: {
+                    "0%, 100%": { transform: "translateY(0)" }, // Posição inicial e final
+                    "50%": { transform: "translateY(-10px)" }, // Posição intermediária mais suave
+                },
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
                 "caret-blink": "caret-blink 1.25s ease-out infinite",
+                smoothBounce: "smoothBounce 1.8s infinite",
             },
         },
     },

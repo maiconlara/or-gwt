@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: "Gerenciamento de Layout",
-        short_name: "iFestei",
+        name: "teenage dream",
+        short_name: "teenage dream",
         description: "",
         start_url: "/",
         display: "standalone",

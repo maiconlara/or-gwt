@@ -8,17 +8,6 @@ body {
     scroll-behavior: smooth !important;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: "#0C2140";
-}
-
-::-webkit-scrollbar-thumb {
-    background: #677489;
-}
 
 
 @keyframes bounce {
