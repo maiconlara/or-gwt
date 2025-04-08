@@ -13,8 +13,7 @@
         "prettier": "prettier . --check",
         "prettier:fix": "prettier . --write",
         "type-check": "tsc --project tsconfig.json --pretty --noEmit",
-        "format": "pnpm lint:fix && pnpm prettier:fix",
-        "commit": "git-cz"
+        "format": "pnpm lint:fix && pnpm prettier:fix"
     },
     "dependencies": {
         "@hookform/resolvers": "^3.9.0",
@@ -64,8 +63,6 @@
         "@typescript-eslint/eslint-plugin": "^8.24.0",
         "@typescript-eslint/parser": "^8.24.0",
         "autoprefixer": "^10.4.19",
-        "commitizen": "^4.3.0",
-        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.57.0",
         "eslint-config-next": "^14.2.4",
         "eslint-config-prettier": "^10.0.1",
@@ -81,11 +78,6 @@
     "eslintConfig": {
         "eslintConfig": {
             "extends": "./.eslintrc.json"
-        }
-    },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
         }
     }
 }
