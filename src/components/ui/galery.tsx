@@ -17,9 +17,9 @@ export const Galery = () => {
             </div>
             <div className="flex  w-full flex-row justify-center bg-[white] pb-20">
                 <div className="grid w-full max-w-[1024px] grid-cols-3 gap-6">
-                    <div className="col-span-1 flex h-[500px] w-full flex-col bg-[#18181A]"></div>
-                    <div className="col-span-1 flex h-[500px] w-full flex-col bg-[#18181A]"></div>
-                    <div className="col-span-1 flex h-[500px] w-full flex-col bg-[#18181A]"></div>
+                    <div className="col-span-1 flex h-[300px] w-full flex-col bg-[#18181A]"></div>
+                    <div className="col-span-1 flex h-[300px] w-full flex-col bg-[#18181A]"></div>
+                    <div className="col-span-1 flex h-[300px] w-full flex-col bg-[#18181A]"></div>
                 </div>
             </div>
         </div>
