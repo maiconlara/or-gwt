@@ -13,8 +13,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     return (
         <html>
             <body
-                className={`${fontVariables} flex min-h-screen w-screen flex-col items-center justify-start overflow-x-hidden`}
-            >
+                className={`${fontVariables} flex min-h-screen w-screen flex-col items-center justify-start overflow-x-hidden bg-[#18181A]`}
+                >
                 {children}
                 <Footer />
             </body>

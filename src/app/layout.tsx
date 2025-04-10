@@ -21,7 +21,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <meta name="theme-color" content="#ffffff" />
             </head>
             <body
-                className={`${fontVariables} font-poppins flex min-h-screen w-screen flex-col items-center justify-start overflow-x-hidden bg-[#18181A]`}
+                className={`${fontVariables} flex min-h-screen w-screen flex-col items-center justify-start overflow-x-hidden bg-[#18181A]`}
             >
                 {children}
             </body>

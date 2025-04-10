@@ -68,6 +68,8 @@ const config = {
                 coverImage: "url('../assets/images/purplebg.jpg')",
                 oliviaBackground: "url('../assets/images/olivias.png')",
                 header: "url('../assets/images/header.png')",
+                headerlg: "url('../assets/images/headerlg.png')",
+                headermb: "url('../assets/images/headermb.png')",
             },
             keyframes: {
                 "caret-blink": {

@@ -1,3 +1,5 @@
+"use client";
+
 import { bannerinvertido } from "@/assets/images";
 import Image from "next/image";
 import PolaroidPhoto from "./polaroid";
@@ -22,7 +24,8 @@ import image18 from "@/assets/images/galery/image18.jpeg";
 import image19 from "@/assets/images/galery/image19.jpeg";
 import image20 from "@/assets/images/galery/image20.jpeg";
 import image21 from "@/assets/images/galery/image21.jpeg";
-
+import { PhotoProvider } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 const photos = [
     { src: image1.src, caption: "" },
@@ -41,20 +44,17 @@ const photos = [
     { src: image14.src, caption: "" },
     { src: image15.src, caption: "" },
     { src: image16.src, caption: "" },
-    { src: image17.src, caption: "" },
+    // { src: image17.src, caption: "" },
     { src: image18.src, caption: "" },
     { src: image19.src, caption: "" },
     { src: image20.src, caption: "" },
-    { src: image21.src, caption: "" }
-            
-    
-
+    { src: image21.src, caption: "" },
 ];
 
 export const Galery = () => {
     return (
         <div className="-mt-[150px] flex w-full max-w-[1920px] flex-col">
-            <div className="flex w-full flex-col">
+            <div className="flex w-full flex-col -mb-1">
                 <Image
                     height={97}
                     width={2000}
@@ -65,14 +65,16 @@ export const Galery = () => {
                     src={bannerinvertido}
                 />
             </div>
-            <div className="flex w-full flex-row justify-center bg-[white] ">
+            <div className="flex w-full flex-row justify-center bg-[white]">
                 <div className="flex flex-wrap justify-center gap-10">
-                    {photos.map((photo, index) => (
-                        <PolaroidPhoto key={index} {...photo} />
-                    ))}
+                    <PhotoProvider bannerVisible={true} maskOpacity={1}>
+                        {photos.map((photo, index) => (
+                                <PolaroidPhoto key={index}  src={photo.src} caption={photo.caption} />
+                        ))}
+                    </PhotoProvider>
                 </div>
             </div>
-            <div className="flex w-full flex-col rotate-[180deg]">
+            <div className="flex w-full rotate-[180deg] flex-col -mt-1">
                 <Image
                     height={97}
                     width={2000}
