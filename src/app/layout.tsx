@@ -23,7 +23,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <body
                 className={`${fontVariables} flex min-h-screen w-screen flex-col items-center justify-start overflow-x-hidden bg-[#18181A]`}
             >
-                {children}
+                    {children}
             </body>
         </html>
     );
