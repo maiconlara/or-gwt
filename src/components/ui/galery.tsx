@@ -30,7 +30,7 @@ import "react-photo-view/dist/react-photo-view.css";
 const photos = [
     { src: image1.src, caption: "" },
     { src: image2.src, caption: "" },
-    { src: image3.src, caption: "" },
+   // { src: image3.src, caption: "" },
     { src: image4.src, caption: "" },
     { src: image5.src, caption: "" },
     { src: image6.src, caption: "" },
@@ -42,7 +42,7 @@ const photos = [
     { src: image12.src, caption: "" },
     { src: image13.src, caption: "" },
     { src: image14.src, caption: "" },
-    { src: image15.src, caption: "" },
+    //{ src: image15.src, caption: "" },
     { src: image16.src, caption: "" },
     // { src: image17.src, caption: "" },
     { src: image18.src, caption: "" },
